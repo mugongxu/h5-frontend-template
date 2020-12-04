@@ -54,8 +54,9 @@ Vue环境模式model为：`development`、`production`、`test`，可以在`pack
 
 vue.config.js里的process.env可通过在项目目录下，添加文件.env.【model的名字】对不同model环境下添加在vue.config.js使用的通用配置。
 
-如果要在全局组件或js中使用不同环境的配置：可借助`webpack.DefinePlugin`
-。
+`注意：NODE_ENV需在文件.env.【model的名字】里重定义，否则是development`
+
+如果要在全局组件或js中使用不同环境的配置：可借助`webpack.DefinePlugin`。
 因为vue已经包含了DefinePlugin插件，所以需要通过chainWebpack来设置:
 ```js
 chainWebpack: config => {
