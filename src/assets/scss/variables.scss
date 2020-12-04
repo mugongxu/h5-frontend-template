@@ -1,0 +1,26 @@
+$primary-color: #C29A63;
+// 主色
+$text-highlight: #C29A63; // 主要高亮文字用色
+$text-highlight-hover: #C29A63; // 按钮悬浮状态
+$text-highlight-click: #C29A63; // 按钮点击状态
+//辅色 - 中性色
+$text-primary: #333; // 重要文字、标题
+$text-default: #666; // 次要文字、信息栏
+$text-weak: #999; // 弱文字、说明文案
+$text-tip: #c1c1c1; // 极弱文字提示信息
+$text-white: #fff; // 主要文字色（需在神色背景上）
+//功能色
+$text-success: #52c41a; // 成功色
+$text-warning: #FF5D1C; // 强调性文字、警示字
+$text-error: #F5222D; // 错误警示等
+$btn-disabled: #D3D3D3; // 按钮禁用状态等
+// 其他
+$info-divider: #E5E5E5; //信息分割线
+$border-stroke: #ccc; //标签类深色描边,边框色
+$placehoder-color: #999;
+// 文字大小
+$font-overbig-title: 24px; // 用于信息标题或其他，强调作用。信息层级较高
+$font-big-title: 18px; // 少数重要标题，如（顶部导航标题、大按钮文字、产品名称大标题）
+$font-title: 16px; // 弹窗大标题、滑出面板列表文字；
+$font-default: 14px; // 正常文字大小，在14号上下浮动
+$font-tip: 12px; // 辅助线文字，角标如：日期提示

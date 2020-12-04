@@ -1,0 +1,16 @@
+// 设置html的fontsize，适应不同分辨率的机型
+// $dw为设计稿的宽度，$sw屏幕宽度，100px为标准
+// fontsize = ($sw / $dw) * (100 / 16) * 100 + '%';
+$screenWidths: (320, 350, 360, 375, 384, 390, 393, 410, 432, 480, 540, 640, 720);
+
+@mixin setHtmlFontSize($dw) {
+    @each $sw in $screenWidths {
+        @media screen and (min-width: $sw * 1px) {
+            html {
+                font-size: $sw / $dw * 100 / 16 * 100%;
+            }
+        }
+    }
+}
+
+@include setHtmlFontSize(375);
