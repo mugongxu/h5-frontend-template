@@ -12,15 +12,7 @@ npm run test:unit
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### 项目简介
-INS用户订单中心
-
-### 实现思路
-由INS产品中心(ins-prod-list-center-front)为入口，通过特定位置进入产品中心当前登录用户的订单中心。
-
-#### 登录鉴权
-1. 获取产品中心当前用户token，跳转：订单中心/#/login?token=当前用户token
-2. 订单中心缓存token，localStorage->token
-3. 已该token为接口鉴权凭证
+h5前端模板
 
 #### UI
 使用Vant，[具体配置查看](https://vant-contrib.gitee.io/vant/#/zh-CN/home)
@@ -55,7 +47,7 @@ less: {
 }
 ```
 
-3. 财富APP配置
+3. 环境配置
 
 区分开发环境(development)和生产环境(production)
 Vue环境模式model为：`development`、`production`、`test`，可以在`package.json`的script里，通过`--mode`l进行自定义名字。eg："build": "vue-cli-service build --model prod";
